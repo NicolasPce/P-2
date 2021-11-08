@@ -1,12 +1,9 @@
-
-import json
 import requests
 import pandas as pd
 import matplotlib.pylab as plt
 from bs4 import BeautifulSoup
 import seaborn as sns
 import os
-from dotenv import load_dotenv
 import src.funcionesp2 as sf
 
 # Hacemos web scraping de la clasificación de La Liga
