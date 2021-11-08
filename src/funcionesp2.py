@@ -8,8 +8,8 @@ def clasif(x):
     for f in x.find_all("tr"): 
         fila = [elemento for elemento in f.find_all("td")] 
         if len(fila) > 1:
-            diccionario_2 = {"Equipo": fila[0].text,
+            diccionario = {"Equipo": fila[0].text,
                           "Puntos":int(fila[1].text)}
-            ligaesp.append(diccionario_2)
+            ligaesp.append(diccionario)
     laliga1 = pd.DataFrame(ligaesp)        
     return laliga1
